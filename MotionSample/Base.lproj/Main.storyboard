@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPt-BR-O4X">
+                                <rect key="frame" x="16" y="59" width="187" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="Bor-0e-w9n"/>
+                                    <constraint firstAttribute="height" constant="21" id="peK-HG-bWB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIx-Oq-KXP">
+                                <rect key="frame" x="16" y="20" width="187" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="6RM-gP-0pZ"/>
+                                    <constraint firstAttribute="height" constant="21" id="TYi-3f-Mob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oC-m1-7lk">
+                                <rect key="frame" x="16" y="95" width="187" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="PNB-tT-Ixt"/>
+                                    <constraint firstAttribute="height" constant="21" id="dYr-eg-abz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Icon-72@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="SKr-Yg-uGW">
+                                <rect key="frame" x="228" y="228" width="144" height="144"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3oC-m1-7lk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="5rb-FM-Dd3"/>
+                            <constraint firstItem="JIx-Oq-KXP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="68M-Kq-1Vb"/>
+                            <constraint firstItem="JIx-Oq-KXP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="8iV-nV-U84"/>
+                            <constraint firstItem="EPt-BR-O4X" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="FJA-09-oqe"/>
+                            <constraint firstItem="EPt-BR-O4X" firstAttribute="top" secondItem="JIx-Oq-KXP" secondAttribute="bottom" constant="18" id="GMe-Ax-s4j"/>
+                            <constraint firstItem="3oC-m1-7lk" firstAttribute="top" secondItem="EPt-BR-O4X" secondAttribute="bottom" constant="15" id="Hjd-H2-kIu"/>
+                            <constraint firstAttribute="centerY" secondItem="SKr-Yg-uGW" secondAttribute="centerY" id="nGn-5V-cbM"/>
+                            <constraint firstAttribute="centerX" secondItem="SKr-Yg-uGW" secondAttribute="centerX" id="xVP-gj-u0s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="SKr-Yg-uGW" id="H5I-xt-OxM"/>
+                        <outlet property="xAc" destination="JIx-Oq-KXP" id="MpS-XG-2J2"/>
+                        <outlet property="yAc" destination="EPt-BR-O4X" id="g59-rL-QcU"/>
+                        <outlet property="zAc" destination="3oC-m1-7lk" id="ZV9-mu-GRZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317" y="322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-72@3x.png" width="144" height="144"/>
+    </resources>
+</document>
